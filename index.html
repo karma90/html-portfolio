@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f3f3f3;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .container {
+      flex: 1;
+      width: 80%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .projects {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .project {
+      border: 1px solid #ddd;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #0056b3;
+    }
+    hr {
+      width: 80%;
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+      margin: 20px 0;
+    }
+    footer {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      background: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-content a {
+      color: white;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Juan Pablo's Portfolio</h1>
+    <h2>I'm a Web Developer</h2>
+    <hr />
+    <div class="projects">
+      <div class="project">
+        <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+        <img src="./assets/images/Movies.png" alt="movie ranking project preview"/>
+      </div>
+      <div class="project">
+        <h3>Birthday Invite</h3>
+        <img src="./assets/images/Birthday.png" alt="birthday invite project preview"/>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <footer>
+    <div class="footer-content">
+      <a href="./public/about.html">About Me</a> |
+      <a href="./public/contact.html">Contact Me</a>
+    </div>
+  </footer>
+</body>
+</html>
